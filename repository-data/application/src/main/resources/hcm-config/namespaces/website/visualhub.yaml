@@ -80,7 +80,7 @@ definitions:
             /cluster.options:
               jcr:primaryType: frontend:pluginconfig
           /primarysections:
-            caption: Primary section
+            caption: Primary tile section
             field: primarysectionvisualhub
             hint: ''
             jcr:primaryType: frontend:plugin
@@ -128,7 +128,7 @@ definitions:
           hipposysedit:uri: http://digital.nhs.uk/jcr/website/nt/1.0
           jcr:mixinTypes: ['hipposysedit:remodel', 'mix:referenceable']
           jcr:primaryType: hipposysedit:nodetype
-          jcr:uuid: 488c70a4-7c11-49dc-b25f-1c5149629e9f
+          jcr:uuid: 7bf52e4a-08a4-4835-8844-dbb17ae9a7b9
           /additionalinformation:
             hipposysedit:mandatory: false
             hipposysedit:multiple: false
@@ -218,6 +218,101 @@ definitions:
             hipposysedit:path: website:tilesectionvisualhub
             hipposysedit:primary: false
             hipposysedit:type: website:tilesectionvisualhub
+        /hipposysedit:nodetype[2]:
+          jcr:primaryType: hipposysedit:nodetype
+          jcr:mixinTypes: ['mix:referenceable']
+          jcr:uuid: c6610239-0d0f-4c8f-8fce-0fd49a190409
+          hipposysedit:node: true
+          hipposysedit:supertype: ['website:basedocument', 'hippostd:relaxed', 'hippotranslation:translated']
+          /additionalinformation:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: website:additionalinformation
+            hipposysedit:primary: false
+            hipposysedit:type: hippostd:html
+          /bannercontrols:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: website:bannercontrols
+            hipposysedit:type: hippo:compound
+            hipposysedit:validators: [contentblocks-validator]
+          /icon:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: website:icon
+            hipposysedit:primary: false
+            hipposysedit:type: hippogallerypicker:imagelink
+          /image:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: website:image
+            hipposysedit:primary: false
+            hipposysedit:type: hippogallerypicker:imagelink
+          /introduction:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: website:introduction
+            hipposysedit:primary: false
+            hipposysedit:type: hippostd:html
+          /primarysectionvisualhub:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: website:primarysections
+            hipposysedit:primary: false
+            hipposysedit:type: website:primarysectionvisualhub
+          /seosummary:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: website:seosummary
+            hipposysedit:primary: false
+            hipposysedit:type: hippostd:seoSummary
+          /shortsummary:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: website:shortsummary
+            hipposysedit:primary: false
+            hipposysedit:type: String
+          /summary:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: website:summary
+            hipposysedit:primary: false
+            hipposysedit:type: hippostd:html
+          /title:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: false
+            hipposysedit:ordered: false
+            hipposysedit:path: website:title
+            hipposysedit:primary: false
+            hipposysedit:type: String
+            hipposysedit:validators: [non-empty, required]
+          /tilesectionvisualhub:
+            jcr:primaryType: hipposysedit:field
+            hipposysedit:mandatory: false
+            hipposysedit:multiple: true
+            hipposysedit:ordered: true
+            hipposysedit:path: website:tilesectionvisualhub
+            hipposysedit:primary: false
+            hipposysedit:type: website:tilesectionvisualhub
       /hipposysedit:prototypes:
         jcr:primaryType: hipposysedit:prototypeset
         /hipposysedit:prototype:
@@ -235,7 +330,7 @@ definitions:
           jcr:primaryType: website:visualhub
           website:shortsummary: ''
           website:title: ''
-          jcr:uuid: d3469bb9-1b38-490c-a395-04af6e9537e9
+          jcr:uuid: 1a5dae3e-3889-4a25-b526-91731e7ad48e
           /website:additionalinformation:
             hippostd:content: ''
             jcr:primaryType: hippostd:html
@@ -268,6 +363,61 @@ definitions:
           /website:summary:
             hippostd:content: ''
             jcr:primaryType: hippostd:html
+          /website:tilesectionvisualhub:
+            jcr:primaryType: website:tilesectionvisualhub
+            website:tilesectionheading: ''
+            /website:tilesectionintroduction:
+              jcr:primaryType: hippostd:html
+              hippostd:content: ''
+        /hipposysedit:prototype[2]:
+          jcr:primaryType: nt:unstructured
+          jcr:mixinTypes: ['hippostd:publishableSummary', 'hippostd:relaxed', 'hippostdpubwf:document',
+            'hippotranslation:translated', 'mix:referenceable']
+          jcr:uuid: d3677c5b-b315-4eb6-8dc4-26d7e94a5c12
+          common:searchRank: 3
+          common:searchable: true
+          hippostd:holder: holder
+          hippostd:state: draft
+          hippostdpubwf:createdBy: ''
+          hippostdpubwf:creationDate: 2018-05-22T10:46:55.362Z
+          hippostdpubwf:lastModificationDate: 2018-05-22T10:46:55.362Z
+          hippostdpubwf:lastModifiedBy: ''
+          hippotranslation:id: document-type-locale-id
+          hippotranslation:locale: document-type-locale
+          website:shortsummary: ''
+          website:title: ''
+          /website:additionalinformation:
+            jcr:primaryType: hippostd:html
+            hippostd:content: ''
+          /website:icon:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /website:image:
+            jcr:primaryType: hippogallerypicker:imagelink
+            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+            hippo:facets: []
+            hippo:modes: []
+            hippo:values: []
+          /website:introduction:
+            jcr:primaryType: hippostd:html
+            hippostd:content: ''
+          /website:primarysections:
+            jcr:primaryType: website:primarysectionvisualhub
+            /website:tilesectionvisualhub:
+              jcr:primaryType: website:tilesectionvisualhub
+              website:tilesectionheading: ''
+              /website:tilesectionintroduction:
+                jcr:primaryType: hippostd:html
+                hippostd:content: ''
+          /website:seosummary:
+            jcr:primaryType: hippostd:html
+            hippostd:content: ''
+          /website:summary:
+            jcr:primaryType: hippostd:html
+            hippostd:content: ''
           /website:tilesectionvisualhub:
             jcr:primaryType: website:tilesectionvisualhub
             website:tilesectionheading: ''

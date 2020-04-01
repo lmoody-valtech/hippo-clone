@@ -10,22 +10,22 @@
   /content:
     jcr:primaryType: hippo:handle
     jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
-    jcr:uuid: 8719fdfe-c8b8-43e2-8572-25244caf3386
+    jcr:uuid: 8a242cb2-5895-4a17-8b7e-8ad3d3c6513b
     hippo:name: Services and resources
-    hippo:versionHistory: 136fa638-e838-4501-8a90-ecc6b4695464
+    hippo:versionHistory: a781e867-f839-4ad6-a0cf-1dcf2159b31b
     /content[1]:
       jcr:primaryType: website:visualhub
       jcr:mixinTypes: ['mix:referenceable']
-      jcr:uuid: b5cc34e9-50e4-4191-afeb-106aa0286060
+      jcr:uuid: bf67d21c-7168-4d2e-9f1f-19fa9923403f
       common:searchRank: 3
       common:searchable: true
       hippo:availability: []
       hippostd:state: draft
       hippostdpubwf:createdBy: admin
-      hippostdpubwf:creationDate: 2020-03-30T15:55:31.360Z
-      hippostdpubwf:lastModificationDate: 2020-04-01T14:03:07.731Z
+      hippostdpubwf:creationDate: 2020-04-01T14:37:02.068Z
+      hippostdpubwf:lastModificationDate: 2020-04-01T14:37:02.068Z
       hippostdpubwf:lastModifiedBy: admin
-      hippotranslation:id: 34470706-6ff2-458d-84e8-7c418f469f98
+      hippotranslation:id: 74debfad-4072-43f0-a6ee-f71313d80f19
       hippotranslation:locale: en
       website:shortsummary: Our information, data, and IT systems help health professionals,
         commissioners, analysts and managers give the best outcomes for patients.
@@ -41,61 +41,24 @@
         hippo:values: []
       /website:image:
         jcr:primaryType: hippogallerypicker:imagelink
-        hippo:docbase: 4d3252da-3269-4acf-9641-2fae51b123dc
+        hippo:docbase: 4ca659c3-e8f0-4cc6-9233-fbf2eb3db67e
         hippo:facets: []
         hippo:modes: []
         hippo:values: []
       /website:introduction:
         jcr:primaryType: hippostd:html
-        hippostd:content: <p>We support health and care organisations to manage cyber
-          security risk. This enables the safe and secure use of data and technology
-          to deliver improved patient care.</p>
-      /website:primarysections[1]:
+        hippostd:content: |-
+          <p>&nbsp;</p>
+
+          <p>We support health and care organisations to manage cyber security risk. This enables the safe and secure use of data and technology to deliver improved patient care.</p>
+      /website:primarysections:
         jcr:primaryType: website:primarysectionvisualhub
-        /website:tilesectionvisualhub[1]:
+        /website:tilesectionvisualhub:
           jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: GCHQ-certified board training
+          website:tilesectionheading: ''
           /website:tilesectionintroduction:
             jcr:primaryType: hippostd:html
-            hippostd:content: <p>Our free&nbsp;GCHQ-certified board-level training
-              will help you to understand how cyber security risks could affect your
-              organisation.</p>
-        /website:primarysectionlinks:
-          jcr:primaryType: website:visualinternallink
-          website:shortsummary: ''
-          /website:icon:
-            jcr:primaryType: hippogallerypicker:imagelink
-            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
-            hippo:facets: []
-            hippo:modes: []
-            hippo:values: []
-          /website:link:
-            jcr:primaryType: hippo:mirror
-            hippo:docbase: dfcabd86-263b-4612-85b1-4d8c1be48530
-        /website:tilesectionvisualhub[2]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Onsite assessments
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>We offer free onsite assessments to help your NHS
-              organisation identify vulnerabilities and understand and overcome areas
-              of high risk.</p>
-        /website:tilesectionvisualhub[3]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Cyber operational readiness
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>To help your NHS organisation prepare for onsite
-              cyber security reassessment, we offer free support to address cyber-critical
-              issues that can have clinical impact and threaten patient safety.</p>
-        /website:tilesectionvisualhub[4]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Technical remediation
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>Our free technical remediation service offers support
-              to NHS Organisations to help fix technical issues in existing technology
-              and systems to help achieve the Cyber Essential Plus accreditation.</p>
+            hippostd:content: ''
       /website:seosummary:
         jcr:primaryType: hippostd:html
         hippostd:content: We support health and care organisations to manage cyber
@@ -106,32 +69,6 @@
         hippostd:content: <p>We support health and care organisations to manage cyber
           security risk. This enables the safe and secure use of data and technology
           to deliver improved patient care.</p>
-      /website:primarysections[2]:
-        jcr:primaryType: website:primarysectionvisualhub
-        /website:tilesectionvisualhub[1]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Technical Support Tile 1
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>Technical Support Tile 1 introduction</p>
-        /website:primarysectionlinks:
-          jcr:primaryType: website:visualinternallink
-          website:shortsummary: ''
-          /website:icon:
-            jcr:primaryType: hippogallerypicker:imagelink
-            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
-            hippo:facets: []
-            hippo:modes: []
-            hippo:values: []
-          /website:link:
-            jcr:primaryType: hippo:mirror
-            hippo:docbase: 4b6056e1-221a-4d3d-81dd-65a628e1efa1
-        /website:tilesectionvisualhub[2]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Technical Support Tile 2
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>Technical Support Tile 2 introduction</p>
       /website:tilesectionvisualhub[1]:
         jcr:primaryType: website:tilesectionvisualhub
         website:tilesectionheading: Incident Management
@@ -165,7 +102,7 @@
             hippo:values: []
           /website:link:
             jcr:primaryType: hippo:mirror
-            hippo:docbase: dfcabd86-263b-4612-85b1-4d8c1be48530
+            hippo:docbase: 1a21c2d6-f439-4a78-8d95-7e0e3866e5af
       /website:tilesectionvisualhub[2]:
         jcr:primaryType: website:tilesectionvisualhub
         website:tilesectionheading: Technical Support
@@ -186,20 +123,20 @@
             hippo:values: []
           /website:link:
             jcr:primaryType: hippo:mirror
-            hippo:docbase: 4b6056e1-221a-4d3d-81dd-65a628e1efa1
+            hippo:docbase: dfcabd86-263b-4612-85b1-4d8c1be48530
     /content[2]:
       jcr:primaryType: website:visualhub
       jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
-      jcr:uuid: c8ed1bb5-1b76-41f4-a20d-5cb0af90733c
+      jcr:uuid: 95d48af9-39d5-4d3e-a841-36664909f296
       common:searchRank: 3
       common:searchable: true
       hippo:availability: [preview]
       hippostd:state: unpublished
       hippostdpubwf:createdBy: admin
-      hippostdpubwf:creationDate: 2020-03-30T15:55:31.360Z
-      hippostdpubwf:lastModificationDate: 2020-04-01T14:05:05.595Z
+      hippostdpubwf:creationDate: 2020-04-01T14:37:02.068Z
+      hippostdpubwf:lastModificationDate: 2020-04-01T14:41:49.869Z
       hippostdpubwf:lastModifiedBy: admin
-      hippotranslation:id: 34470706-6ff2-458d-84e8-7c418f469f98
+      hippotranslation:id: 74debfad-4072-43f0-a6ee-f71313d80f19
       hippotranslation:locale: en
       website:shortsummary: Our information, data, and IT systems help health professionals,
         commissioners, analysts and managers give the best outcomes for patients.
@@ -215,61 +152,24 @@
         hippo:values: []
       /website:image:
         jcr:primaryType: hippogallerypicker:imagelink
-        hippo:docbase: 4d3252da-3269-4acf-9641-2fae51b123dc
+        hippo:docbase: 4ca659c3-e8f0-4cc6-9233-fbf2eb3db67e
         hippo:facets: []
         hippo:modes: []
         hippo:values: []
       /website:introduction:
         jcr:primaryType: hippostd:html
-        hippostd:content: <p>We support health and care organisations to manage cyber
-          security risk. This enables the safe and secure use of data and technology
-          to deliver improved patient care.</p>
-      /website:primarysections[1]:
+        hippostd:content: |-
+          <p>&nbsp;</p>
+
+          <p>We support health and care organisations to manage cyber security risk. This enables the safe and secure use of data and technology to deliver improved patient care.</p>
+      /website:primarysections:
         jcr:primaryType: website:primarysectionvisualhub
-        /website:tilesectionvisualhub[1]:
+        /website:tilesectionvisualhub:
           jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: GCHQ-certified board training
+          website:tilesectionheading: ''
           /website:tilesectionintroduction:
             jcr:primaryType: hippostd:html
-            hippostd:content: <p>Our free&nbsp;GCHQ-certified board-level training
-              will help you to understand how cyber security risks could affect your
-              organisation.</p>
-        /website:primarysectionlinks:
-          jcr:primaryType: website:visualinternallink
-          website:shortsummary: ''
-          /website:icon:
-            jcr:primaryType: hippogallerypicker:imagelink
-            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
-            hippo:facets: []
-            hippo:modes: []
-            hippo:values: []
-          /website:link:
-            jcr:primaryType: hippo:mirror
-            hippo:docbase: dfcabd86-263b-4612-85b1-4d8c1be48530
-        /website:tilesectionvisualhub[2]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Onsite assessments
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>We offer free onsite assessments to help your NHS
-              organisation identify vulnerabilities and understand and overcome areas
-              of high risk.</p>
-        /website:tilesectionvisualhub[3]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Cyber operational readiness
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>To help your NHS organisation prepare for onsite
-              cyber security reassessment, we offer free support to address cyber-critical
-              issues that can have clinical impact and threaten patient safety.</p>
-        /website:tilesectionvisualhub[4]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Technical remediation
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>Our free technical remediation service offers support
-              to NHS Organisations to help fix technical issues in existing technology
-              and systems to help achieve the Cyber Essential Plus accreditation.</p>
+            hippostd:content: ''
       /website:seosummary:
         jcr:primaryType: hippostd:html
         hippostd:content: We support health and care organisations to manage cyber
@@ -280,32 +180,6 @@
         hippostd:content: <p>We support health and care organisations to manage cyber
           security risk. This enables the safe and secure use of data and technology
           to deliver improved patient care.</p>
-      /website:primarysections[2]:
-        jcr:primaryType: website:primarysectionvisualhub
-        /website:tilesectionvisualhub[1]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Technical Support Tile 1
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>Technical Support Tile 1 introduction</p>
-        /website:primarysectionlinks:
-          jcr:primaryType: website:visualinternallink
-          website:shortsummary: ''
-          /website:icon:
-            jcr:primaryType: hippogallerypicker:imagelink
-            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
-            hippo:facets: []
-            hippo:modes: []
-            hippo:values: []
-          /website:link:
-            jcr:primaryType: hippo:mirror
-            hippo:docbase: 4b6056e1-221a-4d3d-81dd-65a628e1efa1
-        /website:tilesectionvisualhub[2]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Technical Support Tile 2
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>Technical Support Tile 2 introduction</p>
       /website:tilesectionvisualhub[1]:
         jcr:primaryType: website:tilesectionvisualhub
         website:tilesectionheading: Incident Management
@@ -339,7 +213,7 @@
             hippo:values: []
           /website:link:
             jcr:primaryType: hippo:mirror
-            hippo:docbase: dfcabd86-263b-4612-85b1-4d8c1be48530
+            hippo:docbase: 1a21c2d6-f439-4a78-8d95-7e0e3866e5af
       /website:tilesectionvisualhub[2]:
         jcr:primaryType: website:tilesectionvisualhub
         website:tilesectionheading: Technical Support
@@ -360,21 +234,21 @@
             hippo:values: []
           /website:link:
             jcr:primaryType: hippo:mirror
-            hippo:docbase: 4b6056e1-221a-4d3d-81dd-65a628e1efa1
+            hippo:docbase: dfcabd86-263b-4612-85b1-4d8c1be48530
     /content[3]:
       jcr:primaryType: website:visualhub
       jcr:mixinTypes: ['mix:referenceable']
-      jcr:uuid: a175393b-73d6-423f-a4ba-fb484555e8f8
+      jcr:uuid: 7cfef987-1bd4-4268-837e-4d989160f042
       common:searchRank: 3
       common:searchable: true
       hippo:availability: [live]
       hippostd:state: published
       hippostdpubwf:createdBy: admin
-      hippostdpubwf:creationDate: 2020-03-30T15:55:31.360Z
-      hippostdpubwf:lastModificationDate: 2020-04-01T14:05:05.595Z
+      hippostdpubwf:creationDate: 2020-04-01T14:37:02.068Z
+      hippostdpubwf:lastModificationDate: 2020-04-01T14:41:49.869Z
       hippostdpubwf:lastModifiedBy: admin
-      hippostdpubwf:publicationDate: 2020-04-01T14:05:15.872Z
-      hippotranslation:id: 34470706-6ff2-458d-84e8-7c418f469f98
+      hippostdpubwf:publicationDate: 2020-04-01T14:41:52.996Z
+      hippotranslation:id: 74debfad-4072-43f0-a6ee-f71313d80f19
       hippotranslation:locale: en
       website:shortsummary: Our information, data, and IT systems help health professionals,
         commissioners, analysts and managers give the best outcomes for patients.
@@ -390,61 +264,24 @@
         hippo:values: []
       /website:image:
         jcr:primaryType: hippogallerypicker:imagelink
-        hippo:docbase: 4d3252da-3269-4acf-9641-2fae51b123dc
+        hippo:docbase: 4ca659c3-e8f0-4cc6-9233-fbf2eb3db67e
         hippo:facets: []
         hippo:modes: []
         hippo:values: []
       /website:introduction:
         jcr:primaryType: hippostd:html
-        hippostd:content: <p>We support health and care organisations to manage cyber
-          security risk. This enables the safe and secure use of data and technology
-          to deliver improved patient care.</p>
-      /website:primarysections[1]:
+        hippostd:content: |-
+          <p>&nbsp;</p>
+
+          <p>We support health and care organisations to manage cyber security risk. This enables the safe and secure use of data and technology to deliver improved patient care.</p>
+      /website:primarysections:
         jcr:primaryType: website:primarysectionvisualhub
-        /website:tilesectionvisualhub[1]:
+        /website:tilesectionvisualhub:
           jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: GCHQ-certified board training
+          website:tilesectionheading: ''
           /website:tilesectionintroduction:
             jcr:primaryType: hippostd:html
-            hippostd:content: <p>Our free&nbsp;GCHQ-certified board-level training
-              will help you to understand how cyber security risks could affect your
-              organisation.</p>
-        /website:primarysectionlinks:
-          jcr:primaryType: website:visualinternallink
-          website:shortsummary: ''
-          /website:icon:
-            jcr:primaryType: hippogallerypicker:imagelink
-            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
-            hippo:facets: []
-            hippo:modes: []
-            hippo:values: []
-          /website:link:
-            jcr:primaryType: hippo:mirror
-            hippo:docbase: dfcabd86-263b-4612-85b1-4d8c1be48530
-        /website:tilesectionvisualhub[2]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Onsite assessments
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>We offer free onsite assessments to help your NHS
-              organisation identify vulnerabilities and understand and overcome areas
-              of high risk.</p>
-        /website:tilesectionvisualhub[3]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Cyber operational readiness
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>To help your NHS organisation prepare for onsite
-              cyber security reassessment, we offer free support to address cyber-critical
-              issues that can have clinical impact and threaten patient safety.</p>
-        /website:tilesectionvisualhub[4]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Technical remediation
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>Our free technical remediation service offers support
-              to NHS Organisations to help fix technical issues in existing technology
-              and systems to help achieve the Cyber Essential Plus accreditation.</p>
+            hippostd:content: ''
       /website:seosummary:
         jcr:primaryType: hippostd:html
         hippostd:content: We support health and care organisations to manage cyber
@@ -455,32 +292,6 @@
         hippostd:content: <p>We support health and care organisations to manage cyber
           security risk. This enables the safe and secure use of data and technology
           to deliver improved patient care.</p>
-      /website:primarysections[2]:
-        jcr:primaryType: website:primarysectionvisualhub
-        /website:tilesectionvisualhub[1]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Technical Support Tile 1
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>Technical Support Tile 1 introduction</p>
-        /website:primarysectionlinks:
-          jcr:primaryType: website:visualinternallink
-          website:shortsummary: ''
-          /website:icon:
-            jcr:primaryType: hippogallerypicker:imagelink
-            hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
-            hippo:facets: []
-            hippo:modes: []
-            hippo:values: []
-          /website:link:
-            jcr:primaryType: hippo:mirror
-            hippo:docbase: 4b6056e1-221a-4d3d-81dd-65a628e1efa1
-        /website:tilesectionvisualhub[2]:
-          jcr:primaryType: website:tilesectionvisualhub
-          website:tilesectionheading: Technical Support Tile 2
-          /website:tilesectionintroduction:
-            jcr:primaryType: hippostd:html
-            hippostd:content: <p>Technical Support Tile 2 introduction</p>
       /website:tilesectionvisualhub[1]:
         jcr:primaryType: website:tilesectionvisualhub
         website:tilesectionheading: Incident Management
@@ -514,7 +325,7 @@
             hippo:values: []
           /website:link:
             jcr:primaryType: hippo:mirror
-            hippo:docbase: dfcabd86-263b-4612-85b1-4d8c1be48530
+            hippo:docbase: 1a21c2d6-f439-4a78-8d95-7e0e3866e5af
       /website:tilesectionvisualhub[2]:
         jcr:primaryType: website:tilesectionvisualhub
         website:tilesectionheading: Technical Support
@@ -535,4 +346,4 @@
             hippo:values: []
           /website:link:
             jcr:primaryType: hippo:mirror
-            hippo:docbase: 4b6056e1-221a-4d3d-81dd-65a628e1efa1
+            hippo:docbase: dfcabd86-263b-4612-85b1-4d8c1be48530
