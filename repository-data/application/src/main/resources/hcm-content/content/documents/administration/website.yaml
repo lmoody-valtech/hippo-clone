@@ -429,44 +429,6 @@
     - hippo:named
     - mix:referenceable
     jcr:primaryType: hippo:handle
-  /most-useful-services-external-values:
-    /most-useful-services-external-values:
-      hippo:availability:
-      - live
-      - preview
-      jcr:mixinTypes:
-      - mix:referenceable
-      jcr:primaryType: selection:valuelist
-    hippo:name: Most useful services external values
-    jcr:mixinTypes:
-    - hippo:named
-    - mix:referenceable
-    jcr:primaryType: hippo:handle
-  /most-useful-services-internal-values:
-    /most-useful-services-internal-values:
-      /selection:listitem[1]:
-        jcr:primaryType: selection:listitem
-        selection:key: secure-boundary-service
-        selection:label: Secure boundary service
-      /selection:listitem[2]:
-        jcr:primaryType: selection:listitem
-        selection:key: specialist-training-for-siros
-        selection:label: Specialist training for SIROs
-      /selection:listitem[3]:
-        jcr:primaryType: selection:listitem
-        selection:key: gchq-certified-board-training
-        selection:label: GCHQ-certified board training
-      hippo:availability:
-      - live
-      - preview
-      jcr:mixinTypes:
-      - mix:referenceable
-      jcr:primaryType: selection:valuelist
-    hippo:name: Most Useful Services internal values
-    jcr:mixinTypes:
-    - hippo:named
-    - mix:referenceable
-    jcr:primaryType: hippo:handle
   /section-type:
     /section-type:
       hippo:availability:
@@ -504,44 +466,6 @@
       - mix:referenceable
       jcr:primaryType: selection:valuelist
     hippo:name: update severity
-    jcr:mixinTypes:
-    - hippo:named
-    - mix:referenceable
-    jcr:primaryType: hippo:handle
-  /useful-information-external-values:
-    /useful-information-external-values:
-      hippo:availability:
-      - live
-      - preview
-      jcr:mixinTypes:
-      - mix:referenceable
-      jcr:primaryType: selection:valuelist
-    hippo:name: Useful information external values
-    jcr:mixinTypes:
-    - hippo:named
-    - mix:referenceable
-    jcr:primaryType: hippo:handle
-  /useful-information-internal-values:
-    /useful-information-internal-values:
-      /selection:listitem[1]:
-        jcr:primaryType: selection:listitem
-        selection:key: cyber-security-support-model
-        selection:label: Cyber security support model
-      /selection:listitem[2]:
-        jcr:primaryType: selection:listitem
-        selection:key: risk-framework-workshop
-        selection:label: Risk framework workshop
-      /selection:listitem[3]:
-        jcr:primaryType: selection:listitem
-        selection:key: policies-and-knowledge
-        selection:label: Policies and knowledge
-      hippo:availability:
-      - live
-      - preview
-      jcr:mixinTypes:
-      - mix:referenceable
-      jcr:primaryType: selection:valuelist
-    hippo:name: Useful information internal values
     jcr:mixinTypes:
     - hippo:named
     - mix:referenceable

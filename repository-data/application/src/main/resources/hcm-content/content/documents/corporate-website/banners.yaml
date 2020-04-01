@@ -1,21 +1,28 @@
+---
 /content/documents/corporate-website/banners:
-  jcr:primaryType: hippostd:folder
-  jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
-  jcr:uuid: 7656fe75-a7d8-41e9-b2e0-3bf250c22bb0
-  hippo:name: Banners
-  hippostd:foldertype: [new-digital-website-folder, new-digital-website-document]
-  hippotranslation:id: 8c8f82ad-0d84-4954-9a9b-afefdb94b00c
-  hippotranslation:locale: en
   /banner:
-    jcr:primaryType: hippo:handle
-    jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
-    jcr:uuid: 62f4db13-63f0-40d0-badf-894921247cc8
-    hippo:name: cyber-data-security-banner
-    hippo:versionHistory: de45bc3a-3956-4aa0-9562-1f4f53fbb0a8
     /banner[1]:
-      jcr:primaryType: website:bannerdocument
-      jcr:mixinTypes: ['mix:referenceable']
-      jcr:uuid: c8c75c43-f166-49ec-9967-239b2cd0edfa
+      /website:content:
+        hippostd:content: <p>We help NHS organisation to manage and improve their
+          cyber security</p>
+        jcr:primaryType: hippostd:html
+      /website:image:
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+        hippo:facets: []
+        hippo:modes: []
+        hippo:values: []
+        jcr:primaryType: hippogallerypicker:imagelink
+      /website:link:
+        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+        jcr:primaryType: hippo:mirror
+      /website:seoSummary:
+        hippostd:content: We help NHS organisation to manage and improve their cyber
+          security
+        jcr:primaryType: hippostd:html
+      /website:seosummary:
+        hippostd:content: <p>We help NHS organisation to manage and improve their
+          cyber security readiness</p>
+        jcr:primaryType: hippostd:html
       common:searchable: true
       hippo:availability: []
       hippo:related___pathreference: []
@@ -26,34 +33,35 @@
       hippostdpubwf:lastModifiedBy: admin
       hippotranslation:id: 2529ed43-0b79-48d1-bf77-6758d44ad8c1
       hippotranslation:locale: en
+      jcr:mixinTypes:
+      - mix:referenceable
+      jcr:primaryType: website:bannerdocument
       website:title: Cyber security for the NHS
+    /banner[2]:
       /website:content:
-        jcr:primaryType: hippostd:html
         hippostd:content: <p>We help NHS organisation to manage and improve their
           cyber security</p>
+        jcr:primaryType: hippostd:html
       /website:image:
-        jcr:primaryType: hippogallerypicker:imagelink
         hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
         hippo:facets: []
         hippo:modes: []
         hippo:values: []
+        jcr:primaryType: hippogallerypicker:imagelink
       /website:link:
-        jcr:primaryType: hippo:mirror
         hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+        jcr:primaryType: hippo:mirror
       /website:seoSummary:
-        jcr:primaryType: hippostd:html
         hippostd:content: We help NHS organisation to manage and improve their cyber
           security
-      /website:seosummary:
         jcr:primaryType: hippostd:html
+      /website:seosummary:
         hippostd:content: <p>We help NHS organisation to manage and improve their
           cyber security readiness</p>
-    /banner[2]:
-      jcr:primaryType: website:bannerdocument
-      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
-      jcr:uuid: 0d0c8d31-501d-4335-a181-d8d37e0b58bb
+        jcr:primaryType: hippostd:html
       common:searchable: true
-      hippo:availability: [preview]
+      hippo:availability:
+      - preview
       hippo:related___pathreference: []
       hippostd:state: unpublished
       hippostdpubwf:createdBy: admin
@@ -62,34 +70,36 @@
       hippostdpubwf:lastModifiedBy: admin
       hippotranslation:id: 2529ed43-0b79-48d1-bf77-6758d44ad8c1
       hippotranslation:locale: en
+      jcr:mixinTypes:
+      - mix:referenceable
+      - mix:versionable
+      jcr:primaryType: website:bannerdocument
       website:title: Cyber security for the NHS
+    /banner[3]:
       /website:content:
-        jcr:primaryType: hippostd:html
         hippostd:content: <p>We help NHS organisation to manage and improve their
           cyber security</p>
+        jcr:primaryType: hippostd:html
       /website:image:
-        jcr:primaryType: hippogallerypicker:imagelink
         hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
         hippo:facets: []
         hippo:modes: []
         hippo:values: []
+        jcr:primaryType: hippogallerypicker:imagelink
       /website:link:
-        jcr:primaryType: hippo:mirror
         hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
+        jcr:primaryType: hippo:mirror
       /website:seoSummary:
-        jcr:primaryType: hippostd:html
         hippostd:content: We help NHS organisation to manage and improve their cyber
           security
-      /website:seosummary:
         jcr:primaryType: hippostd:html
+      /website:seosummary:
         hippostd:content: <p>We help NHS organisation to manage and improve their
           cyber security readiness</p>
-    /banner[3]:
-      jcr:primaryType: website:bannerdocument
-      jcr:mixinTypes: ['mix:referenceable']
-      jcr:uuid: 439b0b6d-c783-4819-b7cc-e336cf1dfd62
+        jcr:primaryType: hippostd:html
       common:searchable: true
-      hippo:availability: [live]
+      hippo:availability:
+      - live
       hippo:related___pathreference: []
       hippostd:state: published
       hippostdpubwf:createdBy: admin
@@ -99,25 +109,25 @@
       hippostdpubwf:publicationDate: 2020-03-31T13:55:45.483Z
       hippotranslation:id: 2529ed43-0b79-48d1-bf77-6758d44ad8c1
       hippotranslation:locale: en
+      jcr:mixinTypes:
+      - mix:referenceable
+      jcr:primaryType: website:bannerdocument
       website:title: Cyber security for the NHS
-      /website:content:
-        jcr:primaryType: hippostd:html
-        hippostd:content: <p>We help NHS organisation to manage and improve their
-          cyber security</p>
-      /website:image:
-        jcr:primaryType: hippogallerypicker:imagelink
-        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
-        hippo:facets: []
-        hippo:modes: []
-        hippo:values: []
-      /website:link:
-        jcr:primaryType: hippo:mirror
-        hippo:docbase: cafebabe-cafe-babe-cafe-babecafebabe
-      /website:seoSummary:
-        jcr:primaryType: hippostd:html
-        hippostd:content: We help NHS organisation to manage and improve their cyber
-          security
-      /website:seosummary:
-        jcr:primaryType: hippostd:html
-        hippostd:content: <p>We help NHS organisation to manage and improve their
-          cyber security readiness</p>
+    hippo:name: cyber-data-security-banner
+    hippo:versionHistory: de45bc3a-3956-4aa0-9562-1f4f53fbb0a8
+    jcr:mixinTypes:
+    - hippo:named
+    - hippo:versionInfo
+    - mix:referenceable
+    jcr:primaryType: hippo:handle
+  hippo:name: Banners
+  hippostd:foldertype:
+  - new-digital-website-folder
+  - new-digital-website-document
+  hippotranslation:id: 8c8f82ad-0d84-4954-9a9b-afefdb94b00c
+  hippotranslation:locale: en
+  jcr:mixinTypes:
+  - hippo:named
+  - hippotranslation:translated
+  - mix:versionable
+  jcr:primaryType: hippostd:folder

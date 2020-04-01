@@ -35,7 +35,7 @@
                     <div class="quote-box-list--grid-row">
                         <#list row as caseStudy>
                             <#assign item = caseStudy />
-                            <#assign item += {"quote": caseStudy.summary, "person":caseStudy.authorName, "role":caseStudy.authorJobTitle, "organisation":caseStudy.authorOrganisation} />
+                            <#assign item += {"quote": caseStudy.summary, "person":caseStudy.authorName, "role":caseStudy.authorRole, "organisation":caseStudy.authorOrganisation} />
                             <#assign item += {"grid": true} />
                             <#assign item += {"newStyle": true} />
                             <div class="quote-box__container quote-box--col-${row?size}">
