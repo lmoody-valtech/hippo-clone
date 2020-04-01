@@ -274,17 +274,9 @@ definitions:
         jcr:primaryType: hst:sitemapitem
       /news-and-events:
         /events:
-          /_any_:
-            hst:componentconfigurationid: hst:pages/event
-            hst:relativecontentpath: /news-and-events/events/${1}
-            jcr:primaryType: hst:sitemapitem
           hst:componentconfigurationid: hst:pages/latestevents
           jcr:primaryType: hst:sitemapitem
         /news:
-          /_any_:
-            hst:componentconfigurationid: hst:pages/news
-            hst:relativecontentpath: /news-and-events/latest-news/${1}
-            jcr:primaryType: hst:sitemapitem
           hst:componentconfigurationid: hst:pages/latestnews
           jcr:primaryType: hst:sitemapitem
         hst:componentconfigurationmappingnames:
@@ -315,5 +307,9 @@ definitions:
       /supplementary-info:
         hst:componentconfigurationid: hst:pages/supplementaryinformation
         hst:relativecontentpath: supplementary-info
+        jcr:primaryType: hst:sitemapitem
+      /swagger-spec:
+        hst:componentconfigurationid: hst:pages/swagger-spec
+        hst:relativecontentpath: ''
         jcr:primaryType: hst:sitemapitem
       jcr:primaryType: hst:sitemap

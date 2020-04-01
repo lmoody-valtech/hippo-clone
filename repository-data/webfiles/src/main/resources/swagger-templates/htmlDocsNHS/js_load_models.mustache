@@ -1,0 +1,12 @@
+// Script section to load models into a JS Var
+var defs = {}
+    {{#models}}
+        {{#model}}
+            {{#isComposedModel}}
+            defs.{{name}} = {};
+            {{/isComposedModel}}
+            {{^isComposedModel}}
+            defs.{{name}} = {{{modelJson}}};
+            {{/isComposedModel}}
+        {{/model}}
+    {{/models}}

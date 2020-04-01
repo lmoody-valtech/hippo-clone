@@ -1,19 +1,35 @@
----
 definitions:
   config:
+    /hippo:configuration/hippo:modules/scheduler/hippo:moduleconfig/swagger:
+      jcr:primaryType: hipposched:jobgroup
+      /import-swagger:
+        hipposched:attributeNames: [batchsize, minutestolive, excludepaths, oaspath,
+          swaggerCodegenLibPath, templatePath, fileDestinationPath, logFilesPath,
+          templateType]
+        hipposched:attributeValues: ['100', '120', /formdata/permanent/, 'https://github.com/NHSDigital/personal-demographics-service-api/releases/download/v1.1.167-beta/patient-demographics-service-api.json',
+          /Users/leemoody/IdeaProjects/hippo, /Users/leemoody/IdeaProjects/hippo/repository-data/webfiles/src/main/resources/swagger-templates/htmlDocsNHS,
+          /Users/leemoody/IdeaProjects/hippo/repository-data/webfiles/src/main/resources/site/swagger/output,
+          /Users/leemoody/IdeaProjects/hippo/logs, htmlnhs]
+        hipposched:enabled: true
+        hipposched:repositoryJobClass: uk.nhs.digital.jobs.ImportSwaggerHtmlJob
+        jcr:primaryType: hipposched:repositoryjob
+        /hipposched:triggers:
+          jcr:primaryType: hipposched:triggers
+          /frequency:
+            hipposched:cronExpression: 0 0/2 * * * ?
+            hipposched:enabled: true
+            hipposched:nextFireTime: 2020-04-01T17:42:00Z
+            jcr:mixinTypes: ['hippo:lockable', 'mix:lockable']
+            jcr:primaryType: hipposched:crontrigger
+            jcr:uuid: 80a05046-cfbf-4aa8-836c-77db7dcfa415
     /hippo:configuration/hippo:modules/scheduler/hippo:moduleconfig/system/FormDataCleanup:
-      hipposched:attributeValues:
-      - '100'
-      - '120'
-      - /formdata/permanent/
+      hipposched:attributeValues: ['100', '120', /formdata/permanent/]
       hipposched:repositoryJobClass: org.onehippo.cms7.hst.toolkit.addon.formdata.FormDataCleanupJob
     /hippo:configuration/hippo:modules/scheduler/hippo:moduleconfig/system/FormDataCleanup/hipposched:triggers/bi-hourly:
       hipposched:cronExpression: 0 0/30 * * * ?
       hipposched:enabled: true
-      hipposched:nextFireTime: 2018-07-03T12:30:00Z
-      jcr:mixinTypes:
-      - hippo:lockable
-      - mix:lockable
+      hipposched:nextFireTime: 2020-04-01T17:00:00Z
+      jcr:mixinTypes: ['hippo:lockable', 'mix:lockable']
       jcr:primaryType: hipposched:crontrigger
     /hippo:configuration/hippo:modules/scheduler/hippo:moduleconfig/system/FormDataCleanup/hipposched:triggers/nightly:
       .meta:delete: true

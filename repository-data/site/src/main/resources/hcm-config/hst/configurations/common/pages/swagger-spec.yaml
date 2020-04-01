@@ -1,0 +1,7 @@
+---
+definitions:
+  config:
+    /hst:hst/hst:configurations/common/hst:pages/swagger-spec:
+      hst:componentclassname: ''
+      hst:template: swagger-spec
+      jcr:primaryType: hst:component
