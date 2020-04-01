@@ -12,19 +12,20 @@
                     ${document.getContent()}
                 </p>
             </div>
-
+            <@hst.manageContent hippobean=document />
             <#if document.internal?has_content>
                 <@hst.link var="link" hippobean=document.internal/>
             <#else>
                 <#assign link=document.external/>
             </#if>
-
-            <div class="cyber-header__cta ctabtn-right"
-                 aria-labelledby="ctabtn-${slugify(document.getLabel())}">
-                <a href="${link}"
-                   class="ctabtn--nhs-digital-button"
-                   id="ctabtn-${slugify(document.getLabel())}">${document.getLabel()}</a>
-            </div>
+            <#if document.getLabel()?? && document.getLabel()?has_content && link?? && link?has_content>
+                <div class="cyber-header__cta ctabtn-right"
+                     aria-labelledby="ctabtn-${slugify(document.getLabel())}">
+                    <a href="${link}"
+                       class="ctabtn--nhs-digital-button"
+                       id="ctabtn-${slugify(document.getLabel())}">${document.getLabel()}</a>
+                </div>
+            </#if>
         </div>
 
     </div>
