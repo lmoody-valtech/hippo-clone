@@ -1,64 +1,57 @@
----
 definitions:
   config:
     /hippo:namespaces/website/primarysectionvisualhub:
+      jcr:mixinTypes: ['editor:editable', 'mix:referenceable']
+      jcr:primaryType: hipposysedit:templatetype
       /editor:templates:
+        jcr:primaryType: editor:templateset
         /_default_:
           jcr:primaryType: frontend:plugincluster
-          frontend:properties:
-          - mode
-          frontend:references:
-          - wicket.model
-          - model.compareTo
-          - engine
-          - validator.id
-          frontend:services:
-          - wicket.id
-          - validator.id
+          frontend:properties: [mode]
+          frontend:references: [wicket.model, model.compareTo, engine, validator.id]
+          frontend:services: [wicket.id, validator.id]
           /root:
             item: ${cluster.id}.field
             jcr:primaryType: frontend:plugin
             plugin.class: org.hippoecm.frontend.service.render.ListViewPlugin
           /primarysectionheading:
-            /cluster.options:
-              jcr:primaryType: frontend:pluginconfig
-              maxlength: '30'
             caption: Section heading
             field: sectionheading
             hint: ''
             jcr:primaryType: frontend:plugin
             plugin.class: org.hippoecm.frontend.editor.plugins.field.PropertyFieldPlugin
             wicket.id: ${cluster.id}.field
-          /primarysectionlinks:
             /cluster.options:
               jcr:primaryType: frontend:pluginconfig
-            caption: Primary sections links builder
+              maxlength: '30'
+          /primarytilesectionlinks:
+            jcr:primaryType: frontend:plugin
+            caption: Primary tile section
             compoundList: website:visualinternallink,website:visualexternallink,website:visualassetlink
             contentPickerType: links
             field: links
             hint: ''
-            jcr:primaryType: frontend:plugin
             plugin.class: org.onehippo.forge.contentblocks.ContentBlocksFieldPlugin
             wicket.id: ${cluster.id}.field
-          /tilesectionvisualhub:
             /cluster.options:
               jcr:primaryType: frontend:pluginconfig
-            caption: Tile Sections links builder
-            field: tilesectionvisualhub
-            hint: ''
-            jcr:primaryType: frontend:plugin
-            plugin.class: org.hippoecm.frontend.editor.plugins.field.NodeFieldPlugin
-            wicket.id: ${cluster.id}.field
-        jcr:primaryType: editor:templateset
       /hipposysedit:nodetype:
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:primaryType: hippo:handle
+        jcr:uuid: 3a892a55-50ae-49e9-86f5-2d5dbfda0b30
         /hipposysedit:nodetype:
+          hipposysedit:node: true
+          hipposysedit:supertype: ['hippo:compound', 'hippostd:relaxed']
+          hipposysedit:uri: http://digital.nhs.uk/jcr/website/nt/1.0
+          jcr:mixinTypes: ['mix:referenceable', 'hipposysedit:remodel']
+          jcr:primaryType: hipposysedit:nodetype
+          jcr:uuid: 0091da52-69b6-4e13-a033-d33d6279e9c2
           /links:
             hipposysedit:multiple: true
             hipposysedit:ordered: true
-            hipposysedit:path: website:primarysectionlinks
+            hipposysedit:path: website:primarytilesectionlinks
             hipposysedit:type: hippo:compound
-            hipposysedit:validators:
-            - contentblocks-validator
+            hipposysedit:validators: [contentblocks-validator]
             jcr:primaryType: hipposysedit:field
           /sectionheading:
             hipposysedit:mandatory: false
@@ -67,40 +60,9 @@ definitions:
             hipposysedit:path: website:primarysectionheading
             hipposysedit:primary: false
             hipposysedit:type: String
-            hipposysedit:validators:
-            - optional
+            hipposysedit:validators: [optional]
             jcr:primaryType: hipposysedit:field
-          /tilesectionvisualhub:
-            hipposysedit:mandatory: false
-            hipposysedit:multiple: true
-            hipposysedit:ordered: true
-            hipposysedit:path: website:tilesectionvisualhub
-            hipposysedit:primary: false
-            hipposysedit:type: website:tilesectionvisualhub
-            jcr:primaryType: hipposysedit:field
-          hipposysedit:node: true
-          hipposysedit:supertype:
-          - hippo:compound
-          - hippostd:relaxed
-          hipposysedit:uri: http://digital.nhs.uk/jcr/website/nt/1.0
-          jcr:mixinTypes:
-          - mix:referenceable
-          - hipposysedit:remodel
-          jcr:primaryType: hipposysedit:nodetype
-        jcr:mixinTypes:
-        - mix:referenceable
-        jcr:primaryType: hippo:handle
       /hipposysedit:prototypes:
-        /hipposysedit:prototype:
-          /website:tilesectionvisualhub:
-            /website:tilesectionintroduction:
-              hippostd:content: ''
-              jcr:primaryType: hippostd:html
-            jcr:primaryType: website:tilesectionvisualhub
-            website:tilesectionheading: ''
-          jcr:primaryType: website:primarysectionvisualhub
         jcr:primaryType: hipposysedit:prototypeset
-      jcr:mixinTypes:
-      - editor:editable
-      - mix:referenceable
-      jcr:primaryType: hipposysedit:templatetype
+        /hipposysedit:prototype:
+          jcr:primaryType: website:primarysectionvisualhub
